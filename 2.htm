@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style type="text/css">
+<!--
+
+.coolmenu{
+width: 200px;
+}
+
+.coolmenu td{
+background-color:bisque;
+cursor:hand;
+font-family:Arial;
+font-weight:bold;
+}
+
+.coolmenu td a{
+text-decoration:none;
+color:black;
+}
+
+.coolmenu td#boxdescription{
+background: ivory;
+height: 25px;
+font-weight: normal;
+}
+body {
+	background-image: url(fondo%20examen.jpg.crdownload);
+}
+
+-->
+</style>
+
+<script language="javascript">
+<!--
+
+/*
+Cool Table Menu
+By Clarence Eldefors (http://www.freebox.com/cereweb) with modifications from javascriptkit.com
+Visit http://javascriptkit.com for this and over 400+ other scripts
+*/
+
+
+
+function movein(which,html){
+which.style.background='coral'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML=html
+else
+boxdescription.innerHTML=html
+}
+
+function moveout(which){
+which.style.background='bisque'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML=' '
+else
+boxdescription.innerHTML=' '
+}
+
+//-->
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="Layer1" style="position:absolute; left:10px; top:17px; width:115px; height:212px; z-index:1"><table class="coolmenu" bgcolor="black" border="1" bordercolor="ivory" cellpadding="2" cellspacing="0">
+
+<tr>
+<td bordercolor="black" id="choice1" onmouseover="movein(this,'hardware')" onmouseout="moveout(this)"">
+<a href="hard.htm" target="mainFrame">que es el hardware</a></td>
+</tr>
+
+<td bordercolor="black" id="choice2" onmouseover="movein(this,'software')" onmouseout="moveout(this)">
+<a href="soft.htm" target="mainFrame">que es el software</a></td>
+</tr>
+
+
+<tr>
+<td bordercolor="black" id="boxdescription"></td></tr>
+</table>
+
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
